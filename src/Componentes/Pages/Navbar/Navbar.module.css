@@ -17,9 +17,22 @@
   flex-direction: row;
   justify-content: space-evenly;
   width: 45%;
+  height: 100%;
 }
 
 .logo {
   background-color: aqua;
   width: 10%;
+  height: 100%;
+}
+
+.listContainer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: #dfe0e2;
+  height: 100%;
+  vertical-align: middle;
 }

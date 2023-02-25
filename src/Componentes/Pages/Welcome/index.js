@@ -1,17 +1,21 @@
 import styles from "./Welcome.module.css";
-import { useRef } from "react";
 
 const Welcome = () => {
-  const sectionRef = useRef(null);
-
   return (
-    <div ref={sectionRef} className={styles.container} id="welcome-section">
-      <h1 className={styles.name}>Cristian Gerster</h1>
-      <h2 className={styles.h2Tag}>MERN Stack Developer</h2>
-      <p className={styles.pTag}>
-        Bienvenido a mi portfolio, aca podras conocerme un poco, ver mis
-        proyectos y contactarme si gustas :).
-      </p>
+    <div className={styles.container}>
+      <div className={styles.textSide}>
+        <h1 className={styles.name}>CRISTIAN GERSTER</h1>
+        <p className={styles.pTag}>
+          Desarrollador MERN stack & SQL en constante desarrollo
+        </p>
+      </div>
+      <div className={styles.imageSide}>
+        <img
+          className={styles.image}
+          src="images/profile.png"
+          alt="my profile"
+        />
+      </div>
     </div>
   );
 };
