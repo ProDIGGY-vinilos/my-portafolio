@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  height: 75px;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 45%;
+}
+
+.logo {
+  background-color: aqua;
+  width: 10%;
+}
