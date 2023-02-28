@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import styles from "./Navbar.module.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 

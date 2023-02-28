@@ -63,8 +63,3 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-.active {
-  z-index: 99999;
-  border-bottom: 4px solid #23b5d3;
-}
