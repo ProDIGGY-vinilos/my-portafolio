@@ -21,7 +21,7 @@ function Contact() {
   };
 
   return (
-    <div className={styles.container}>
+    <div id="contact" className={styles.container}>
       <h2 className={styles.title}>Contact</h2>
       <p className={styles.simplyText}>
         Tienes una oferta, consulta o solo una duda? no dudes en enviarme un
