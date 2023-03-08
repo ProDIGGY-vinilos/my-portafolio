@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 47%;
+  width: 47.5%;
 }
 
 .aboutRight {
@@ -36,8 +36,9 @@
 }
 
 .line {
-  width: 6%;
+  width: 5%;
   height: 100%;
+  align-self: end;
   background-color: #23b5d3;
 }
 
