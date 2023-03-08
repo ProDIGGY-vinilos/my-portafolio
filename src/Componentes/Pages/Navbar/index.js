@@ -32,7 +32,7 @@ function Navbar() {
           </Link>
         </div>
         <div className={styles.logo}>
-          <img src="" alt="logo" />
+          <img src="images/logo.svg" alt="logo" />
         </div>
         <div className={styles.right}>
           <Link
