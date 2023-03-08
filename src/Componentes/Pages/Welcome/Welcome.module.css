@@ -18,15 +18,14 @@
 }
 
 .name {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #fff;
+  color: #dfe0e2;
 }
 
 .pTag {
-  font-size: 1.5rem;
   font-weight: 400;
-  color: #fff;
+  font-size: 1.8rem;
+  color: #dfe0e2;
+  width: 75%;
 }
 
 .imageSide {

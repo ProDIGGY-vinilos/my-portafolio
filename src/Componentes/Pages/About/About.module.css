@@ -2,38 +2,77 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-  font-size: 20px;
-  background-color: green;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #071013;
 }
 
 .introduction {
   margin: 0px;
+  padding: 0px;
+  width: 90%;
   color: white;
 }
 
 .about {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutLeft,
+.aboutRight {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+.aboutRight {
+  justify-content: flex-end;
+}
+
+.line {
+  width: 10%;
+  height: 100%;
+  background-color: #23b5d3;
+}
+
+.skillsTitle {
+  margin: 0px;
+  padding: 0px;
+  color: #dfe0e2;
   text-align: center;
-  width: 75%;
+  font-weight: 400;
+  font-size: 3.2rem;
 }
 
 .skills {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 90%;
-  background-color: red;
+  justify-content: center;
+  align-content: space-around;
+  width: 80%;
+  height: 60%;
+  background-color: #dfe0e2;
+  border: 2px solid #89c4e1;
+  border-radius: 10px;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 .skillsItem {
-  width: 200px;
-  height: auto;
+  width: 20%;
+  margin-left: 15px;
+  margin-right: 15px;
   align-self: center;
 }
 
 .skillsItem img {
-  height: 100%;
-  width: 50%;
+  width: -webkit-fill-available;
+  max-height: 110px;
 }
