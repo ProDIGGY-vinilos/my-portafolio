@@ -21,6 +21,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .aboutLeft,
@@ -41,18 +42,26 @@
   height: 100%;
   align-self: end;
   background-color: #23b5d3;
-  box-shadow: 0 0 0 rgb(253, 7, 200);
-  animation: pulseeffect 2s infinite;
+  box-shadow: 0 0 0 #071013;
+  animation: pulseeffect 3s infinite;
 }
 
 @keyframes pulseeffect {
   0% {
+    transform: translateY(100%);
+    opacity: 1;
     box-shadow: 0 0 0 0 #23b5d385;
   }
+
   50% {
+    transform: translateY(50%);
+    opacity: 0.8;
     box-shadow: 0 0 0 10px #23b5d300;
   }
+
   100% {
+    transform: translateY(0);
+    opacity: 0;
     box-shadow: 0 0 0 0 #23b5d300;
   }
 }
