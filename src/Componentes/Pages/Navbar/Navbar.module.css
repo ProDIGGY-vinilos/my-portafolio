@@ -4,6 +4,11 @@
   background-color: #07101335;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .listContainer {

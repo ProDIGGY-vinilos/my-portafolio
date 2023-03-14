@@ -5,22 +5,24 @@ import Navbar from "./Componentes/Pages/Navbar";
 import Welcome from "./Componentes/Pages/Welcome";
 import Projects from "./Componentes/Pages/Projects";
 import Footer from "./Componentes/Pages/Footer";
+import Line from "./Componentes/Pages/Line";
 
 const App = () => {
   return (
     <div class="container">
       <Welcome />
-      <div class="navbar">
-        <Navbar
-          idHome={Welcome}
-          idAbout={About}
-          idProjects="projects"
-          idContact="contact"
-        />
+      <Navbar
+        idHome={Welcome}
+        idAbout={About}
+        idProjects="projects"
+        idContact="contact"
+      />
+      <div class="wrapper">
+        <About />
+        <Projects />
+        <Contact />
+        <Line />
       </div>
-      <About />
-      <Projects />
-      <Contact />
       <Footer />
     </div>
   );

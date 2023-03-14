@@ -15,7 +15,6 @@ function About() {
             las cosas para poder llevarlas al siguiente nivel.{" "}
           </p>
         </div>
-        <div className={styles.line}></div>
         <div className={styles.aboutRight}>
           <h2 className={styles.skillsTitle}>Habilidades</h2>
           <div className={styles.skills}>

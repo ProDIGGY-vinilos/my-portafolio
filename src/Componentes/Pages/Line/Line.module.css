@@ -1,0 +1,31 @@
+.line {
+  position: absolute;
+  top: 0;
+  left: calc(50% - (65px / 2));
+
+  width: 65px;
+  height: 100%;
+  background-color: #23b5d3;
+
+  animation: pulseeffect 4s infinite linear;
+}
+
+@keyframes pulseeffect {
+  0% {
+    transform: translateY(100%);
+    opacity: 1;
+    box-shadow: 0 0 0 0 #23b5d385;
+  }
+
+  50% {
+    transform: translateY(50%);
+    opacity: 0.5;
+    box-shadow: 0 0 0 10px #23b5d300;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+    box-shadow: 0 0 0 0 #23b5d300;
+  }
+}
