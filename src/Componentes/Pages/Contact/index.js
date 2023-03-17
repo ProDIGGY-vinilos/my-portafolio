@@ -14,12 +14,12 @@ const Contact = () => {
   const onSubmit = (data) => {
     send("service_n5muktg", "template_go1n4z4", data, "AwzASSl8lbR6arECh")
       .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
+        alert("SUCCESS!", response.status, response.text);
       })
       .catch((err) => {
-        console.log("FAILED...", err);
+        alert("FAILED...", err);
       });
-    console.log(data);
+    alert(data);
   };
 
   return (
