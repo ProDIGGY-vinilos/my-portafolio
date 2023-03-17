@@ -1,0 +1,32 @@
+.formControl {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formControl label {
+  color: #dfe0e2;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.formControl input {
+  height: 40px;
+  font-size: 1rem;
+  border: 2px solid #a2aebb;
+  background-color: #dfe0e2;
+  color: #071013;
+  border-radius: 6px;
+}
+
+.formControl input:focus {
+  border: 2px solid #23b5d3;
+  outline: none;
+}
+
+.textColor {
+  color: #f00;
+  margin: 0px;
+}

@@ -1,8 +1,10 @@
 import { useForm } from "react-hook-form";
 import { send } from "emailjs-com";
 import styles from "./Contact.module.css";
+import InputS from "../../Shared/Input";
+import TextareaS from "../../Shared/Textarea";
 
-function Contact() {
+const Contact = () => {
   const {
     register,
     handleSubmit,
@@ -22,45 +24,47 @@ function Contact() {
 
   return (
     <div id="contact" className={styles.container}>
-      <h2 className={styles.title}>Contact</h2>
-      <p className={styles.simplyText}>
-        Tienes una oferta, consulta o solo una duda? no dudes en enviarme un
-        mensaje
-      </p>
-
-      <form className={styles.generalForm} onSubmit={handleSubmit(onSubmit)}>
-        <label>Leave your name and email</label>
-        <div className={styles.formInput}>
-          {/* hacer componente shared para input */}
-          <input
+      <div className={styles.left}>
+        <h2 className={styles.title}>Contactame</h2>
+        <form className={styles.generalForm} onSubmit={handleSubmit(onSubmit)}>
+          <InputS
+            id="name"
+            name="name"
             type="text"
             placeholder="Name"
-            {...register("name", { required: true })}
+            label="Name"
+            register={register}
+            error={errors.name}
           />
-          {errors.name && <span>This field is required</span>}
-          <input
+          <InputS
+            id="email"
+            name="email"
             type="text"
-            name="mail"
             placeholder="Email"
-            {...register("email", { required: true })}
+            label="Email"
+            register={register}
+            error={errors.email}
           />
-          {errors.email && <span>This field is required</span>}
-        </div>
-        <div className={styles.formTextarea}>
-          <label>Leave your message</label>
-          <textarea
+          <TextareaS
+            label="Leave your message"
+            name="message"
             placeholder="Message"
-            {...register("message", { required: true })}
+            register={register}
+            error={errors.message}
           />
-          {errors.message && <span>This field is required</span>}
-        </div>
-        <div className={styles.formButtons}>
-          <input type="submit" />
-          <input type="reset" />
-        </div>
-      </form>
+          <div className={styles.formButtons}>
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <div className={styles.right}>
+        <p className={styles.simplyText}>
+          Tienes una oferta, consulta o solo una duda? no dudes en enviarme un
+          mensaje
+        </p>
+      </div>
     </div>
   );
-}
+};
 
 export default Contact;

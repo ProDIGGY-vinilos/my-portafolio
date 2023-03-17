@@ -1,6 +1,6 @@
 import styles from "./About.module.css";
 
-function About() {
+const About = () => {
   return (
     <section id="about" className={styles.container}>
       <div className={styles.about}>
@@ -54,6 +54,6 @@ function About() {
       </div>
     </section>
   );
-}
+};
 
 export default About;

@@ -2,7 +2,7 @@
 import styles from "./Navbar.module.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav className={styles.container}>
       <div className={styles.listContainer}>
@@ -63,6 +63,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

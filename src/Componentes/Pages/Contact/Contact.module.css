@@ -1,24 +1,35 @@
 .container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.right,
+.left {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  background-color: green;
+  width: 47%;
 }
 
 .title {
   margin: 0px;
   margin-bottom: 15px;
   padding: 0px;
-  font-size: 38px;
+  font-size: 3.3rem;
+  font-weight: 300;
+  color: #dfe0e2;
 }
 
 .simplyText {
   margin: 0px;
   padding: 0px;
-  width: 65%;
+  width: 85%;
   text-align: center;
+  color: #dfe0e2;
 }
 
 .generalForm {
@@ -29,60 +40,52 @@
   width: 85%;
   height: 50%;
   margin-top: 30px;
-  background-color: #fff;
   border-radius: 5px;
   padding: 10px;
 }
 
-.formInput {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
-  margin: 10px;
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.formInput input {
-  width: 375px;
-  outline: none;
-  padding: 5px;
-}
-
-.formInput label {
-  width: 45%;
-  margin: 0px;
-  padding: 0px;
-}
-
-.formTextarea {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 10px;
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.formTextarea textarea {
-  width: 98%;
-  height: 100px;
-  outline: none;
-  padding: 5px;
-  resize: none;
-}
-
 .formButtons {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: flex-end;
   width: 100%;
   margin: 10px;
+}
+
+.formButtons button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: #23b5d3;
+  color: #dfe0e2;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.formButtons button:before {
+  content: "panorama_fish_eye";
+  font-family: "Material Icons";
+  transition: content 1s, transform 1s;
+}
+
+.formButtons button:hover:before {
+  content: "circle";
+  font-family: "Material Icons";
+  animation: effect 1.5s;
+}
+
+@keyframes effect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
