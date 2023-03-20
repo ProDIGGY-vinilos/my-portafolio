@@ -63,6 +63,7 @@
 
 .skillsItem {
   width: 20%;
+  height: 20%;
   margin-left: 15px;
   margin-right: 15px;
   align-self: center;
@@ -70,5 +71,9 @@
 
 .skillsItem img {
   width: -webkit-fill-available;
+  height: 90%;
   max-height: 110px;
+}
+
+@media (max-width: 1024px) {
 }
