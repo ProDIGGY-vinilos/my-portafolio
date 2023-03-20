@@ -10,7 +10,6 @@ const Footer = () => {
             <div className={styles.squares}>
               <div className={styles.firstSquare}></div>
               <div className={styles.secondSquare}></div>
-              <div className={styles.thirdSquare}></div>
             </div>
             <div className={styles.imageContent}>
               <a
@@ -30,7 +29,6 @@ const Footer = () => {
             <div className={styles.squares}>
               <div className={styles.firstSquare}></div>
               <div className={styles.secondSquare}></div>
-              <div className={styles.thirdSquare}></div>
             </div>
             <div className={styles.imageContent}>
               <a
@@ -50,7 +48,6 @@ const Footer = () => {
             <div className={styles.squares}>
               <div className={styles.firstSquare}></div>
               <div className={styles.secondSquare}></div>
-              <div className={styles.thirdSquare}></div>
             </div>
             <div className={styles.imageContent}>
               <a href="https://t.me/Crisha7" target="_blank" rel="noreferrer">
@@ -65,7 +62,6 @@ const Footer = () => {
             <div className={styles.squares}>
               <div className={styles.firstSquare}></div>
               <div className={styles.secondSquare}></div>
-              <div className={styles.thirdSquare}></div>
             </div>
             <div className={styles.imageContent}>
               <a
@@ -84,7 +80,6 @@ const Footer = () => {
             <div className={styles.squares}>
               <div className={styles.firstSquare}></div>
               <div className={styles.secondSquare}></div>
-              <div className={styles.thirdSquare}></div>
             </div>
             <div className={styles.imageContent}>
               <a
@@ -103,7 +98,6 @@ const Footer = () => {
             <div className={styles.squares}>
               <div className={styles.firstSquare}></div>
               <div className={styles.secondSquare}></div>
-              <div className={styles.thirdSquare}></div>
             </div>
             <div className={styles.imageContent}>
               <a

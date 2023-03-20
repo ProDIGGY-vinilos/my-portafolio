@@ -49,42 +49,38 @@
   color: #dfe0e2;
   opacity: 0;
 }
-
 .squares {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  height: 15px;
-  margin-top: -15px;
+  justify-content: space-between;
+  position: absolute;
+  top: -20px;
+  height: 21px;
+  width: 120px;
   opacity: 0;
   background-color: #071013;
 }
-
-.firstSquare {
+.firstSquare,
+.secondSquare {
+  opacity: 0;
   height: 100%;
-  width: 10px;
-  border-radius: 0 100px 100px 0;
-  background-color: #23b5d3;
+  width: 45%;
+}
+.firstSquare {
+  border-radius: 0 50px 50px 0;
+  background-color: #071013;
 }
 .secondSquare {
-  width: 10px;
+  border-radius: 50px 0 0 50px;
   background-color: #071013;
-  z-index: -1;
-}
-.thirdSquare {
-  height: 100%;
-  width: 10px;
-  border-radius: 100px 0 0 100px;
-  background-color: #23b5d3;
 }
 
 .liContent:hover {
   background-color: #071013;
   opacity: 1;
   transition: 0.5s all ease;
-  transform: translateY(15px);
+  transform: translateY(20px);
 }
-
 .liContent:hover .socialText {
   color: #dfe0e2;
   opacity: 1;
@@ -96,13 +92,20 @@
 .liContent:hover .imageContent img {
   height: 35px;
   width: 35px;
-  padding-top: 5px;
+  /* padding-top: 5px; */
+  transform: translateY(10px);
   transition: 0.5s all ease-in-out;
 }
 
 .liContent:hover .squares {
-  transform: translateY(0px);
-  height: 18px;
-  transition: 1s fast-in-out;
+  transition: all 0.9s ease-in-out;
+  position: absolute;
+  top: -20px;
+  opacity: 1;
+}
+
+.liContent:hover .firstSquare,
+.liContent:hover .secondSquare {
+  background-color: #23b5d3;
   opacity: 1;
 }
