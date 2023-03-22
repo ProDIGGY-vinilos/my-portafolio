@@ -17,8 +17,8 @@
 
 .title {
   margin: 0px;
-  margin-bottom: 15px;
   padding: 0px;
+  margin-top: 30px;
   font-size: 3.3rem;
   font-weight: 300;
   color: #dfe0e2;
@@ -39,7 +39,6 @@
   align-items: center;
   width: 85%;
   height: 50%;
-  margin-top: 30px;
   border-radius: 5px;
   padding: 10px;
 }

@@ -3,13 +3,38 @@ import styles from "./Projects.module.css";
 const Projects = () => {
   return (
     <div id="projects" className={styles.container}>
-      <div className={styles.leftContainer}>
-        <h1>Projects</h1>
-        <div className={styles.left}>
+      <div className={styles.left}>
+        <h2 className={styles.title}>Projects</h2>
+        <div className={styles.projectsLeft}>
           <div className={styles.project}>
-            <h2 className={styles.projectTitle}>Project 1</h2>
-            <img src="images/projects/landing-trackgenix.png" alt="" />
-            <div className={styles.projectBtns}>
+            <h3>Project 1</h3>
+            <img
+              src="images/projects/landing-trackgenix.png"
+              alt="Trackgenix landing page"
+            ></img>
+          </div>
+          <div className={styles.project}>
+            <h3>Project 1</h3>
+            <img
+              src="images/projects/landing-trackgenix.png"
+              alt="Trackgenix landing page"
+            ></img>
+          </div>
+        </div>
+      </div>
+      <div className={styles.right}>
+        <div className={styles.projectsRight}>
+          <div className={styles.project}></div>
+          <div className={styles.project}></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Projects;
+
+/* <div className={styles.projectBtns}>
               <button className={styles.btnGitt}>
                 <img
                   className={styles.btnGit}
@@ -26,17 +51,4 @@ const Projects = () => {
                 ></img>
                 View
               </button>
-            </div>
-          </div>
-          <div className={styles.project}> </div>
-        </div>
-      </div>
-      <div className={styles.right}>
-        <div className={styles.project}> </div>
-        <div className={styles.project}> </div>
-      </div>
-    </div>
-  );
-};
-
-export default Projects;
+            </div> */
