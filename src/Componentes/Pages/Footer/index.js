@@ -93,7 +93,7 @@ const Footer = () => {
             <p className={styles.socialText}>Github</p>
           </div>
         </li>
-        <li>
+        {/* <li>
           <div className={styles.liContent}>
             <div className={styles.squares}>
               <div className={styles.firstSquare}></div>
@@ -110,7 +110,7 @@ const Footer = () => {
             </div>
             <p className={styles.socialText}>Twitch</p>
           </div>
-        </li>
+        </li> */}
       </ul>
     </footer>
   );

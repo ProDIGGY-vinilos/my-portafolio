@@ -67,15 +67,30 @@
   position: absolute;
   width: 100%;
   height: 4px;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
+
   background-color: #23b5d3;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease-out 0s;
 }
 
+@keyframes pulse {
+  0% {
+    background-color: #23b5d3;
+  }
+  50% {
+    background-color: #071013;
+  }
+  100% {
+    background-color: #23b5d3;
+  }
+}
+
 .aTag:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+  animation: pulse 1s infinite;
+  animation-delay: 0.5s;
 }
