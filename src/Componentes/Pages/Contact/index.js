@@ -31,8 +31,8 @@ const Contact = () => {
             id="name"
             name="name"
             type="text"
-            placeholder="Name"
-            label="Name"
+            placeholder="Nombre"
+            label="Nombre"
             register={register}
             error={errors.name}
           />
@@ -46,9 +46,9 @@ const Contact = () => {
             error={errors.email}
           />
           <TextareaS
-            label="Leave your message"
+            label="Deja tu mensaje"
             name="message"
-            placeholder="Message"
+            placeholder="Mensaje"
             register={register}
             error={errors.message}
           />

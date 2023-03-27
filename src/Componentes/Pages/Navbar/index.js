@@ -17,7 +17,7 @@ const Navbar = () => {
             className={styles.aTag}
           >
             {" "}
-            Home{" "}
+            Inicio{" "}
           </Link>
           <Link
             activeClass="active"
@@ -28,7 +28,7 @@ const Navbar = () => {
             duration={500}
             className={styles.aTag}
           >
-            About{" "}
+            Sobre mi{" "}
           </Link>
         </div>
         <div className={styles.logo}>
@@ -45,7 +45,7 @@ const Navbar = () => {
             className={styles.aTag}
           >
             {" "}
-            Projects{" "}
+            Proyectos{" "}
           </Link>
           <Link
             activeClass="active"
@@ -57,7 +57,7 @@ const Navbar = () => {
             className={styles.aTag}
           >
             {" "}
-            Contact{" "}
+            Contacto{" "}
           </Link>
         </div>
       </div>
