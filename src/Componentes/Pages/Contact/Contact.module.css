@@ -88,3 +88,39 @@
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 1279px) {
+  .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+  .title {
+    position: relative;
+    margin-top: -270px;
+    margin-bottom: 200px;
+  }
+  .right,
+  .left {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .title {
+    position: relative;
+    margin-top: -340px;
+    margin-bottom: 270px;
+  }
+  .right,
+  .left {
+    width: 100%;
+  }
+}

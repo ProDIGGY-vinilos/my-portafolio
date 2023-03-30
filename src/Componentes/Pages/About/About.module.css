@@ -75,5 +75,51 @@
   max-height: 110px;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1279px) {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+  }
+  .aboutLeft,
+  .aboutRight {
+    width: 100%;
+  }
+  .aboutRight {
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .skills {
+    width: 90%;
+    height: 70%;
+  }
+  .skillsItem {
+    width: 23%;
+    height: 23%;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    height: 100%;
+  }
+  .skills {
+    width: 90%;
+    padding-top: 15px;
+    margin: 0px;
+  }
+  .aboutRight {
+    margin-top: 55px;
+  }
+
+  .skillsTitle {
+    margin-bottom: 15px;
+  }
+
+  .skillsItem {
+    width: 20%;
+    height: 20%;
+    margin: 5px;
+  }
 }
