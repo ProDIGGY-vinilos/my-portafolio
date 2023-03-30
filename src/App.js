@@ -14,8 +14,8 @@ const App = () => {
       <Navbar
         idHome={Welcome}
         idAbout={About}
-        idProjects="projects"
-        idContact="contact"
+        idProjects={Projects}
+        idContact={Contact}
       />
       <div class="wrapper">
         <About />

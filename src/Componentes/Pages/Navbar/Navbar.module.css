@@ -94,3 +94,36 @@
   animation: pulse 1s infinite;
   animation-delay: 0.5s;
 }
+
+.menuH {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    height: 100vh;
+  }
+  .logo {
+    display: none;
+  }
+
+  .listContainer {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    flex-direction: column;
+  }
+
+  .menuH {
+    position: sticky;
+    display: flex;
+    color: red;
+    top: 90%;
+    height: 50px;
+    width: 50px;
+
+    background-color: green;
+  }
+}
